@@ -2,7 +2,7 @@ var tape = require("tape"),
     objectMap = require("..");
 
 
-tape("objectMap(object) creates a new object with the results of calling a provided function on every element in this object", function(assert) {
+tape("objectMap(object, callback) creates a new object with the results of calling a provided function on every element in this object", function(assert) {
     assert.deepEquals(
         objectMap({
             a: "a",
